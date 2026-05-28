@@ -1,0 +1,181 @@
+.pesanan__body {
+  padding: 24px 16px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.pesanan__topbar {
+  width: 100%;
+  max-width: 960px;
+  background: var(--color-white);
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 14px 22px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.pesanan__back {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-black);
+}
+
+.pesanan__title {
+  margin: 0;
+  flex: 1;
+  text-align: right;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--color-black);
+}
+
+.pesanan__list {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.pesanan__empty {
+  text-align: center;
+  color: #555;
+  font-family: var(--font-heading);
+}
+
+.pesanan__row {
+  background: #bdbbbc;
+  border-radius: 16px;
+  padding: 18px 22px;
+}
+
+.pesanan__customer {
+  margin: 0 0 10px;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--color-black);
+}
+
+.pesanan__card {
+  display: grid;
+  grid-template-columns: 180px 1fr auto;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.pesanan__img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.pesanan__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pesanan__product {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-black);
+}
+
+.pesanan__desc {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  color: var(--color-black);
+}
+
+.pesanan__meta {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  color: var(--color-black);
+}
+
+.pesanan__status {
+  margin: 6px 0 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 14px;
+  color: #0a8a2b;
+}
+
+.pesanan__reason {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 14px;
+  color: #333;
+}
+
+.pesanan__deposit {
+  margin: 6px 0 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-black);
+}
+
+.pesanan__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.pesanan__btn {
+  min-width: 120px;
+  height: 44px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--color-black);
+}
+
+.pesanan__btn--ok {
+  background: #03d73e;
+}
+
+.pesanan__btn--deny {
+  background: #ee2f2f;
+  color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+  .pesanan__card {
+    grid-template-columns: 1fr;
+  }
+  .pesanan__img {
+    width: 100%;
+    height: 220px;
+  }
+  .pesanan__actions {
+    flex-direction: row;
+  }
+  .pesanan__title {
+    font-size: 18px;
+  }
+}
